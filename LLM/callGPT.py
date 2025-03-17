@@ -89,7 +89,7 @@ def ask_gpt(question: str) -> str:
         response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": f"You are a helpful assistant. You have this books: {books}."},
+                {"role": "system", "content": f"You are a helpful assistant. You have this books: {books}. if you recommend books, just talk to me title."},
                 {"role": "user", "content": f"{question}"},
             ],
             temperature = 0.1,
