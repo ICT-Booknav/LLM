@@ -4,3 +4,7 @@ curl -X POST http://localhost:3000/ask-gpt -H "Content-Type: application/json" -
 
 
 curl -X POST http://localhost:8000/gpt -H "Content-Type: application/json" -d "{\"type\": 1, \"keyword\": \"어드벤처\"}"
+
+curl -X POST http://localhost:8000/gpt -H "Content-Type: application/json" -d "{\"keyword\": \"어드벤처\"}"
+
+curl -X POST http://localhost:8000/gpt -H "Content-Type: application/json" -d "{\"keyword\": \"스프링 백엔드 공부\"}"
